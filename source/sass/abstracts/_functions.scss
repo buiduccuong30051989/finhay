@@ -1,0 +1,16 @@
+//
+// Abstracts :: Functions
+// --------------------------------------------------
+// generator color
+@function color($color-name, $alpha) {
+  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-#{$color-name}), $alpha);
+}
+
+@function darkerColor($color-name, $alpha) {
+  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-darker-#{$color-name}), $alpha);
+}
+
+@function lightenColor($color-name, $alpha) {
+  @return hsla(var(--hue-#{$color-name}),var(--saturation-#{$color-name}),var(--lightness-lighten-#{$color-name}), $alpha);
+}
+
