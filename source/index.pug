@@ -1,10 +1,328 @@
 extends modules/layout/layout.pug
 include modules/script/lib
 append content
-  h1 cuong beo
+  .cover
+    img.desktop-cover(src="images/bg-cover.png")
+    img.mobile-cover(src="images/mobile-cover.png")
+    .cover__content
+      .container
+        .row
+          .header
+            .header__left
+              a(href="#").header__mobile-btn
+                img(src="images/btn-menu.png")
+              a(href="#").logo
+                img(src="images/logo.png")
+            .header__right
+              .menu
+                a(href="#").header__link Đăng nhập
+                a(href="#").header__link Hỗ trợ
+                .btn-close-menu
+                  svg(viewBox='0 0 40 40')
+                    path.close-x(d='M 10,10 L 30,30 M 30,10 L 10,30')
+              a(href="#").header__btn TẢI APP
+          .cover__intro
+            h2 Trung đã tặng bạn 10.000đ tại Finhay
+            h2 Quá tuyệt để bắt đầu!
+            a(href="#").btn-intro Đăng ký để nhận
+              svg(width='14px', height='12px', viewBox='0 0 14 12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                defs
+                  polygon#path-1(points='0 0 12.8 0 12.8 11.2 0 11.2')
+                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                  g#Landing_UI-Design_Desktop_190125(transform='translate(-337.000000, -400.000000)')
+                    g#Banner(transform='translate(-2.000000, 0.000000)')
+                      g(id='CTA-Đăng-ký-để-nhận', transform='translate(177.000000, 380.000000)')
+                        g#right-arrow(transform='translate(168.800000, 25.600000) scale(1, -1) translate(-168.800000, -25.600000) translate(162.400000, 20.000000)')
+                          mask#mask-2(fill='white')
+                            use(xlink:href='#path-1')
+                          g#Clip-2
+                          path#Fill-1(d='M12.5954071,5.07692909 L7.97287654,0.214963646 C7.84092317,0.0761785631 7.66505472,0 7.47753108,0 C7.28979932,0 7.11403493,0.076288015 6.98208156,0.214963646 L6.56239075,0.656492847 C6.43054145,0.795059026 6.35790466,0.980142288 6.35790466,1.17748417 C6.35790466,1.3747166 6.43054145,1.56603862 6.56239075,1.7046048 L9.25910971,4.54718161 L0.691506423,4.54718161 C0.305220217,4.54718161 0,4.865249 0,5.27164412 L0,5.89584864 C0,6.30224377 0.305220217,6.65238058 0.691506423,6.65238058 L9.28970458,6.65238058 L6.56249482,9.51082793 C6.43064551,9.64961301 6.35800872,9.82966148 6.35800872,10.0270034 C6.35800872,10.2241263 6.43064551,10.4068017 6.56249482,10.5454773 L6.98218562,10.9855836 C7.11413899,11.1243687 7.28990338,11.2 7.47763515,11.2 C7.66515879,11.2 7.84102724,11.1233836 7.97298061,10.9845985 L12.5955111,6.12274255 C12.7277767,5.98351966 12.8005175,5.79767024 12.7999972,5.60010945 C12.8004135,5.40189196 12.7277767,5.21593308 12.5954071,5.07692909', fill='#384347', mask='url(#mask-2)')
+  .dttn-wrap
+    .container
+      .row
+        .dttn__inner
+          .dttn__cover
+            img.desktop-cover(src="images/dttn.png")
+            img.mobile-cover(src="images/cgdt.png")
+          .dttn__content
+            h3 Đầu tư như thế nào?
+            p Khởi điểm từ 50.000đ, Finhay giúp bạn đưa tiền đến tay các quỹ tài chính, chuyên gia sẽ thay bạn đầu tư nhằm tạo ra lợi nhuận
+  .cgdt-wrap
+    img.bg-01(src="images/bg-01.png")
+    .container
+      .row
+        .cgdt__inner
+          .cgdt__cover-mobile
+            img(src="images/cgdt.png")
+          .cgdt__content
+            h3 Chuyên gia sẽ đầu tư gì?
+            p Các chuyên gia sẽ thực hiện việc đầu tư vào thị trường cổ phiếu hoặc trái phiếu. 
+          .cgdt__cover
+            img(src="images/cgdt.png")
+  .tcbh-wrap
+    .container
+      .row
+        .tcbh__inner
+          .tcbh__cover-mobile
+            img(src="images/mobile-tcph.png")
+          .tcbh__cover
+            img(src="images/cgdt.png")
+          .tcbh__content
+            img.tcbh-icon(src="images/tcbh-icon.png")
+            h3 Tôi có phù hợp không?
+            i Có, chắc chắn là như thế!
+            i Dựa vào tính cách của bạn, Finhay sẽ đề xuất một chiến lược đầu tư phù hợp.
+            p Finhay phân bổ tiền của bạn thành các phần khác nhau để tăng khả năng sinh lời. Cấu trúc phân bổ được thiết kế áp dụng lý thuyết “Cấu trúc đầu tư hiện đại” của Harry Markowitz, người từng được giải Nobel Kinh Tế.
+            a(href="#").btn-tc Xem tính cách đầu tư của bạn
+              svg(width='14px', height='12px', viewBox='0 0 14 12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                defs
+                  polygon#path-1(points='0 0 12.8 0 12.8 11.2 0 11.2')
+                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                  g#Landing_UI-Design_Desktop_190125(transform='translate(-1075.000000, -2319.000000)')
+                    g(id='Tôi-có-phù-hợp-ko', transform='translate(136.000000, 1956.000000)')
+                      g#Group-7(transform='translate(669.000000, 0.000000)')
+                        g(id='CTA-Xem-tính-cách', transform='translate(0.000000, 343.000000)')
+                          g#Group(transform='translate(34.000000, 14.000000)')
+                            g#right-arrow(transform='translate(242.800000, 11.600000) scale(1, -1) translate(-242.800000, -11.600000) translate(236.400000, 6.000000)')
+                              mask#mask-2(fill='white')
+                                use(xlink:href='#path-1')
+                              g#Clip-2
+                              path#Fill-1(d='M12.5954071,5.07692909 L7.97287654,0.214963646 C7.84092317,0.0761785631 7.66505472,0 7.47753108,0 C7.28979932,0 7.11403493,0.076288015 6.98208156,0.214963646 L6.56239075,0.656492847 C6.43054145,0.795059026 6.35790466,0.980142288 6.35790466,1.17748417 C6.35790466,1.3747166 6.43054145,1.56603862 6.56239075,1.7046048 L9.25910971,4.54718161 L0.691506423,4.54718161 C0.305220217,4.54718161 0,4.865249 0,5.27164412 L0,5.89584864 C0,6.30224377 0.305220217,6.65238058 0.691506423,6.65238058 L9.28970458,6.65238058 L6.56249482,9.51082793 C6.43064551,9.64961301 6.35800872,9.82966148 6.35800872,10.0270034 C6.35800872,10.2241263 6.43064551,10.4068017 6.56249482,10.5454773 L6.98218562,10.9855836 C7.11413899,11.1243687 7.28990338,11.2 7.47763515,11.2 C7.66515879,11.2 7.84102724,11.1233836 7.97298061,10.9845985 L12.5955111,6.12274255 C12.7277767,5.98351966 12.8005175,5.79767024 12.7999972,5.60010945 C12.8004135,5.40189196 12.7277767,5.21593308 12.5954071,5.07692909', fill='#FFFFFF', mask='url(#mask-2)')
+  .video-wrap
+    .container
+      .row
+        .video-inner(data-video-id="LspZCNNP6aE")
+          img(src="images/bg-video.png")
+          a(href="#").btn-video
+            img(src="images/btn-video.png")
+  .lstt-wrap
+    .container
+      .row
+        .lstt__inner
+          .lstt__cover-mobile
+            img(src="images/mobile-lstt.png")
+          .lstt__content
+            h3 Làm sao tôi tin được?
+            p Các Quỹ tài chính trong hệ thống của Finhay đã đăng ký với Ủy Ban Chứng Khoán Nhà Nước và là các thương hiệu lớn như Bảo Việt, Techcom Securities, SSI... 
+          .lstt__cover
+            img(src="images/cgdt.png")
+  .ttmn-wrap
+    img.bg-02(src="images/bg-02.png")
+    .container
+      .row
+        .ttmn__inner
+          .ttmn__control
+            .ttmn-prev
+              img(src="images/arrLeft.png")
+            .ttmn-next
+              img(src="images/arrRight.png")
+          .slider
+            .ttmn__item
+              .ttmn__avatar
+                img(src="http://i.pravatar.cc/150")
+              .ttmn__content
+                .ttmn__content-header
+                  h4 Trí Đỗ
+                  span UX Design Guru tại Jelly 
+                .ttmn__content-content
+                  p "Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Rất phù hợp với các bạn trẻ mới bắt đầu đầu tư hoặc muốn xét một quỹ tiết kiệm riêng. Điều tuyệt vời là chỉ với 50,000đ. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn.“
+            .ttmn__item
+              .ttmn__avatar
+                img(src="http://i.pravatar.cc/150")
+              .ttmn__content
+                .ttmn__content-header
+                  h4 Trí Đỗ
+                  span UX Design Guru tại Jelly 
+                .ttmn__content-content
+                  p "Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Rất phù hợp với các bạn trẻ mới bắt đầu đầu tư hoặc muốn xét một quỹ tiết kiệm riêng. Điều tuyệt vời là chỉ với 50,000đ. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn.“       
+            .ttmn__item
+              .ttmn__avatar
+                img(src="http://i.pravatar.cc/150")
+              .ttmn__content
+                .ttmn__content-header
+                  h4 Trí Đỗ
+                  span UX Design Guru tại Jelly 
+                .ttmn__content-content
+                  p "Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Rất phù hợp với các bạn trẻ mới bắt đầu đầu tư hoặc muốn xét một quỹ tiết kiệm riêng. Điều tuyệt vời là chỉ với 50,000đ. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn.“       
+            .ttmn__item
+              .ttmn__avatar
+                img(src="http://i.pravatar.cc/150")
+              .ttmn__content
+                .ttmn__content-header
+                  h4 Trí Đỗ
+                  span UX Design Guru tại Jelly 
+                .ttmn__content-content
+                  p "Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Rất phù hợp với các bạn trẻ mới bắt đầu đầu tư hoặc muốn xét một quỹ tiết kiệm riêng. Điều tuyệt vời là chỉ với 50,000đ. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn. Sản phẩm hay, hữu ích cho các nhà đầu tư có ít vốn.“       
+  .cgk-wrap
+    img.bg-01(src="images/bg-01.png")
+    .container
+      .row
+        .cgk__inner
+          h3 Finhay có gì khác biệt?
+          .cgk__list
+            .cgk__item
+              .cgk__img
+                img(src="images/cgk.png")
+              p Bắt đầu chỉ từ 50.000 đồng
+            .cgk__item
+              .cgk__img
+                img(src="images/cgk.png")
+              p Tự động và dễ hiểu, tất cả có trên ứng dụng
+            .cgk__item
+              .cgk__img
+                img(src="images/cgk.png")
+              p Thông tin tài sản được cập nhật liên tục, hiển thị minh bạch
+            .cgk__item
+              .cgk__img
+                img(src="images/cgk.png")
+              p Đầu tư nhỏ, đều đặn mang lại lợi ích dài hạn, tự tin tài chính
+  .dk-wrap
+    .container
+      .row
+        .dk__inner
+          h3 Đăng ký để nhận 10.000đ
+          form
+            .input-group.validate
+              label Số điện thoại hoặc email
+              input(type="text")
+            .input-group
+              label Họ và tên
+              input(type="text")
+            .input-group.password
+              label Mật khẩu
+              input(type="password")
+            .input-group
+              button.btn-submit Đăng ký
+                svg(width='12px', height='9px', viewBox='0 0 12 9', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  defs
+                    polygon#path-1(points='0 0 12 0 12 9 0 9')
+                  g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                    g(id='Landing-Page_UI-Design_Vers-2-_Active-form-đăng-ký_190121', transform='translate(-218.000000, -4376.000000)')
+                      g(id='CTA-Xem-tính-cách', transform='translate(112.000000, 4357.000000)')
+                        g#right-arrow(transform='translate(112.000000, 23.500000) scale(1, -1) translate(-112.000000, -23.500000) translate(106.000000, 19.000000)')
+                          mask#mask-2(fill='white')
+                            use(xlink:href='#path-1')
+                          g#Clip-2
+                          path#Fill-1(d='M11.8081941,4.07967516 L7.47457176,0.172738644 C7.35086547,0.0612149167 7.1859888,0 7.01018539,0 C6.83418686,0 6.66940775,0.0613028692 6.54570146,0.172738644 L6.15224133,0.527538895 C6.02863261,0.638886717 5.96053562,0.787614338 5.96053562,0.946192635 C5.96053562,1.10468298 6.02863261,1.25842389 6.15224133,1.36977171 L8.68041535,3.65398522 L0.648287272,3.65398522 C0.286143953,3.65398522 0,3.90957509 0,4.2361426 L0,4.73773552 C0,5.06430303 0.286143953,5.34566297 0.648287272,5.34566297 L8.70909804,5.34566297 L6.15233889,7.64262958 C6.02873017,7.75415331 5.96063318,7.89883512 5.96063318,8.05741342 C5.96063318,8.21581581 6.02873017,8.36260847 6.15233889,8.47404425 L6.54579902,8.82770112 C6.66950531,8.93922485 6.83428442,9 7.01028295,9 C7.18608636,9 7.35096303,8.93843327 7.47466932,8.82690955 L11.8082917,4.92006098 C11.9322906,4.80818544 12.0004852,4.65884215 11.9999974,4.50008795 C12.0003876,4.34080604 11.9322906,4.19137479 11.8081941,4.07967516', fill='#FFFFFF', mask='url(#mask-2)')
+
+  .quote-wrap
+    img.bg-01(src="images/bg-01.png")
+    .container
+      .row
+        .quote__inner
+          .quote__control
+            .quote-prev
+              img(src="images/arrLeft.png")
+            .quote-next
+              img(src="images/arrRight.png")
+          .slider2
+            .quote__item
+              p "Sản phẩm fintech này nhanh chóng thu hút sự quan tâm của giới trẻ, đặc biệt là cộng đồng startup."
+              .quote__img
+                img(src="images/quote.png")
+            .quote__item
+              p "Sản phẩm fintech này nhanh chóng thu hút sự quan tâm của giới trẻ, đặc biệt là cộng đồng startup."
+              .quote__img
+                img(src="images/quote.png")
+            .quote__item
+              p "Sản phẩm fintech này nhanh chóng thu hút sự quan tâm của giới trẻ, đặc biệt là cộng đồng startup."
+              .quote__img
+                img(src="images/quote.png")
+            .quote__item
+              p "Sản phẩm fintech này nhanh chóng thu hút sự quan tâm của giới trẻ, đặc biệt là cộng đồng startup."
+              .quote__img
+                img(src="images/quote.png")
+            .quote__item
+              p "Sản phẩm fintech này nhanh chóng thu hút sự quan tâm của giới trẻ, đặc biệt là cộng đồng startup."
+              .quote__img
+                img(src="images/quote.png")
+  .tkcb-wrap
+    .container
+      .row
+        .tkcb__inner
+          .tkcb__content
+            h3 Ứng dụng này được thiết kế riêng cho bạn
+            p Đăng ký ngay hôm nay để bắt đầu tiết kiệm và đầu tư thông minh 
+            .btn-wrap
+              a(href="#").btn-download.ios
+                img(src="images/ios.png")
+              a(href="#").btn-download.and
+                img(src="images/android.png")
+          .tkcb__cover
+            img(src="images/tkcb.png")
+  .footer
+    .footer__top
+      .container
+        .row
+          .footer__top-inner
+            .footer__top-list-link
+              .footer__top-links
+                h4.js-open-list-link 
+                  img(src="images/footerArrow.png")
+                  | THÔNG TIN
+                .js-list-link
+                  a(href="#") An toàn & Bảo mật
+                  a(href="#") Phân bổ
+                  a(href="#") Biểu phí
+              .footer__top-links
+                h4.js-open-list-link 
+                  img(src="images/footerArrow.png")
+                  | DANH MỤC
+                .js-list-link
+                  a(href="#") Đầu tư
+                  a(href="#") Kiến thức
+              .footer__top-links
+                h4.js-open-list-link 
+                  img(src="images/footerArrow.png")
+                  | HỖ TRỢ
+                .js-list-link
+                  a(href="#") Câu hỏi thường gặp
+                  a(href="#") Hướng dẫn sử dụng
+                  a(href="#") Liên hệ
+              .footer__top-links
+                h4.js-open-list-link 
+                  img(src="images/footerArrow.png")
+                  | CHÚNG TÔI
+                .js-list-link
+                  a(href="#") Về Finhay
+                  a(href="#") Tuyển dụng
+            .footer__top-socical
+              p Theo dõi chúng tôi trên các mạng xã hội
+              div
+                a(href="#")
+                  img(src="images/iconface.png")
+                a(href="#")
+                  img(src="images/iconin.png")
+                a(href="#")
+                  img(src="images/iconins.png")
+                a(href="#")
+                  img(src="images/iconyou.png")
+    .footer__bottom
+      .container
+        .row
+          h4 THÔNG TIN CẦN BIẾT
+          p Trong đầu tư, cơ hội và rủi ro luôn song hành. Người dùng cần chú ý đầu tư ẩn chứa rủi ro.
+          br
+          p Finhay hiện tại chỉ cho phép người dùng trên mười tám tuổi và mang quốc tịch Việt Nam. Finhay không đưa ra lời mời chào đầu tư vào một sản phẩm tài chính cụ thể nào, mà thay vào đó là chúng tôi cung cấp nền tảng công nghệ để giúp bạn tiếp cận các quỹ tài chính, đồng thời giúp đánh giá khẩu vị rủi ro của bạn và đề xuất cấu trúc phù hợp cho khẩu vị rủi ro đấy, mọi quyết định đầu tư vào quỹ tài chính hoặc cấu trúc nào là hoàn toàn do bạn quyết định. Luôn nhớ, trong đầu tư, kết quả hoạt động của quá khứ không phải là cam kết lợi nhuận của tương lai. Chỉ quyết định sử dụng sản phẩm khi bạn cảm thấy sẵn sàng.
+          br
+          br
+          p Sử dụng Finhay là bạn đã đồng ý với các 
+            strong
+              a(href="#") hợp đồng điện tử 
+            | và 
+            strong
+              a(href="#") nội quy sử dụng 
+            | của Finhay.
+          br
+          br
+          p Mọi thắc mắc và phản hồi xin vui lòng gửi tới email: 
+            a(href="mailto:hello@finhay.com.vn") hello@finhay.com.vn
+          br
+          br
+          p.mgt-0 ©Bản quyền thuộc về Công ty TNHH Finhay.
+          p Finhay Company Limited – ĐKKD: 0107748373 bởi Sở KH&ĐT Thành Phố Hà Nội.
 append plugins  
   +lib
 append script
-  //- script(defer src="js/mobilemenu.min.js")
-  //- script(defer src="js/main.min.js")
+  script(defer src="js/main.min.js")
 
